@@ -16,7 +16,7 @@ massive(process.env.CONNECTION_STRING).then(db => {
 }).catch(err => { console.log('ERROR CONNECTING TO DATABASE:', err) })
 
 app.get('/api/shelfie', controller.get)
-app.post('/api/shelfie', controller.addItem)
+// app.post('/api/shelfie', controller.addItem)
 
 
 

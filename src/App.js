@@ -17,11 +17,14 @@ class App extends Component {
       InputPrice: ''
     }]
     }
+
+  this.addItem = this.addItem.bind(this)
+
   }
 
 
 
-addItem = () => {
+addItem() {
  const { inputName, InputPrice, inputImage } = this.state
  const newProduct = { inputName, InputPrice, inputImage }
  axios.post("http://localhost:4000/api/shelfie", newProduct).then(response => {
